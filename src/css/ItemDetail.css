@@ -1,0 +1,150 @@
+html,body{
+background-image: url('../img/BackGround_Login.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+font-family: 'Numans', sans-serif;
+}
+
+.img-tab{
+  height: 80px;
+width: 100px;
+border: 1px solid #0000005e;
+margin-bottom: 5px;
+}
+
+.nav-no-background{
+  background-color: transparent !important;
+}
+
+.img-tab-content{
+
+}
+.product-name{
+  font-size: 18px;
+line-height: 30px;
+text-transform: uppercase;
+}
+.price-box{
+  margin: 0;
+  float: right;
+padding-left: 15px;
+}
+.price{
+  font-weight: bold;
+}
+.li-label{
+  text-decoration: none;
+  list-style-type: none;
+  display: inline;
+  color: gray;
+  margin-right: 0.5rem;
+  padding: 1rem;
+  border: 1px solid gray;
+}
+.li-label:hover{
+
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.li-label > a{
+  text-decoration: none;
+  color:black;
+}
+
+.swatch-label{
+
+}
+
+.quantity {
+  position: relative;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button
+{
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number]
+{
+  -moz-appearance: textfield;
+}
+
+.quantity input {
+  width: 70px;
+  height: 42px;
+  line-height: 1.65;
+  float: left;
+  display: block;
+  padding: 0;
+  margin: 0;
+  padding-left: 20px;
+  border: 1px solid #eee;
+}
+
+.quantity input:focus {
+  outline: 0;
+}
+
+.quantity-nav {
+  float: left;
+  position: relative;
+  height: 42px;
+}
+
+.quantity-button {
+  position: relative;
+  cursor: pointer;
+  border-left: 1px solid #eee;
+  width: 20px;
+  text-align: center;
+  color: #333;
+  font-size: 13px;
+  font-family: "Trebuchet MS", Helvetica, sans-serif !important;
+  line-height: 1.7;
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.quantity-button.quantity-up {
+  position: absolute;
+  height: 50%;
+  top: 0;
+  border-bottom: 1px solid #eee;
+}
+
+.quantity-button.quantity-down {
+  position: absolute;
+  bottom: -1px;
+  height: 50%;
+}
+
+.opacity{
+  position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #f9f9f9ad;
+}
+
+.add-to-cart{
+  width: 40%;
+cursor: pointer;
+background-color: #111;
+color:white;
+}
+
+.add-to-cart:hover{
+ color:#fff;
+     background: rgba(17,17,17,.75);
+}
+
+#myTabContent{
+  border: 3px solid #0000007d;
+}

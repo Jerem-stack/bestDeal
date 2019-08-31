@@ -1,0 +1,53 @@
+
+html,body{
+  background-image: url(../img/BackGround_Login.jpg);
+  background-size: cover;
+  background-repeat: unset;
+  font-family: 'Numans', sans-serif;
+  height: 108%;
+}
+
+.opacity{
+  position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #f9f9f9ad;
+}
+
+.checkout-container{
+  position: relative;
+  z-index: 1020;
+}
+
+.ptitle {
+  width: 35%;
+  border-bottom: 1px solid black;
+  padding: 17px 0;
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+}
+
+.checkout .card-title{
+  text-align: center;
+}
+.checkout .card-title > a{
+  color: black;
+}
+.checkout .card-title > a:hover{
+  text-decoration:none;
+}
+
+.checkout .card{
+  border:0;
+}
+
+.card-header-bkgd{
+  background-color: gainsboro;
+}
+
+.shopping_cart{
+    box-shadow: 4px 4px 28px 4px #0000005c;
+}

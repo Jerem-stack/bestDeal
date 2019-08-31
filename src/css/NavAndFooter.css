@@ -1,0 +1,228 @@
+/*Navbar*/
+.headers-top{
+  background-color: #0000006e;
+}
+.headers-content{
+  background-color: #eceae696;
+}
+
+.header-eden{
+  position: absolute;
+  top: 0;
+  width:100%;
+  background-color: #ffffffe0;
+}
+
+.header-eden  hr {
+  margin: 0;
+}
+
+.border-radius-input{
+  border-radius: 26px;
+  border-top-right-radius: 26px !important;
+  border-bottom-right-radius: 26px !important;
+}
+
+.abs{
+  position: absolute;
+  right: 0;
+  z-index: 2000;
+}
+
+.search{
+  border: none;
+  top:5px;
+}
+
+.header-sticky ul, .header-top ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.header-sticky li , .header-top li{
+  float: right;
+}
+
+.header-sticky li a , .header-top li a{
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.header-sticky li a:hover, .header-top  li a:hover {
+    color: gray;
+    text-decoration: none;
+}
+
+input:focus, textarea {
+    outline: none !important;
+}
+
+input[type="search"]{
+    outline: none !important;
+
+}
+
+.test-drop{
+  height: auto;
+  background-color: #ffffffe0;
+  display: none;
+}
+
+.test-drop  li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+/* ==========================================Navabar==========================================*/
+
+.extra-padding-nav{
+  /*margin-right: 80px;
+  margin-left: 80px;*/
+  background-color: rgba(255,255,255,.90);
+  /*border-bottom: 1px solid lightgray;*/
+  height: 85px;
+  padding-bottom: 7px;
+}
+
+
+
+.separator{
+  clear: both;
+  margin-top: 30px;
+}
+
+.mega-dropdown{
+  position: absolute;
+  width: 500%;
+}
+.title-dropdown{
+  text-align: center;
+  border-bottom: 1px solid lightslategray;
+}
+
+.navbar-input{
+  border: none;
+  box-shadow: none !important;
+  border: 1px solid #887878;
+}
+
+input[type="search"] {
+    outline: none !important;
+}
+.btn-outline-secondary:hover {
+  background-color: transparent;
+  color:black
+}
+
+.navbar-search{
+  color:lightslategray;
+}
+
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}
+
+.navbar-brand img{
+  width: 250px;
+}
+
+nav li a, nav li a:hover {
+  color:black;
+  font-family: sans-serif;
+  font-weight: bolder;
+  font-size: large;
+}
+
+
+/*==========================================Footer================================================*/
+
+/* The Overlay (background) */
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */
+  height: 100%;
+  width: 0;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: rgb(0,0,0); /* Black fallback color */
+  background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  top: 25%; /* 25% from the top */
+  width: 100%; /* 100% width */
+  text-align: center; /* Centered text/links */
+  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block; /* Display block instead of inline */
+  transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+.text-align{
+  text-align: center;
+}
+
+.white{
+  color: white;
+}
+
+/*footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}*/
+
+footer{
+  z-index: 1020;
+    position: relative;
+}
+
+.opacity{
+  position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #f9f9f9ad;
+}

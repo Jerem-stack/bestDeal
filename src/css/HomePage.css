@@ -1,0 +1,262 @@
+*{
+  box-sizing: border-box;;
+}
+
+/*.row, .container-fluid  {
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+}*/
+
+
+/*==========================================Carousel informatif==========================================*/
+
+
+.carousel-fade .carousel-item {
+ opacity: 0;
+ transition-duration: .6s;
+ transition-property: opacity;
+}
+
+.carousel-fade  .carousel-item.active,
+.carousel-fade  .carousel-item-next.carousel-item-left,
+.carousel-fade  .carousel-item-prev.carousel-item-right {
+  opacity: 1;
+}
+
+.carousel-fade .active.carousel-item-left,
+.carousel-fade  .active.carousel-item-right {
+ opacity: 0;
+}
+
+.carousel-fade  .carousel-item-next,
+.carousel-fade .carousel-item-prev,
+.carousel-fade .carousel-item.active,
+.carousel-fade .active.carousel-item-left,
+.carousel-fade  .active.carousel-item-prev {
+ transform: translateX(0);
+ transform: translate3d(0, 0, 0);
+}
+
+
+.carousel-info{
+  height: 60px;
+  width: 100%;
+  padding: 2px;
+  background-color: #f7f7f7;
+  color:black;
+}
+
+#carousel-info .carousel-inner .carousel-item{
+  text-align: center;
+  padding-top: 3px;
+}
+#carousel-info .carousel-inner .carousel-item p{
+  color:gray;
+}
+
+.carousel-control-next, .carousel-control-prev {
+    filter: invert(100%);
+}
+
+#carousel-info h6{
+  font-weight: lighter;
+}
+
+h6 i{
+  margin-right: 5px;
+}
+
+/*==========================================Carousel Principal==========================================*/
+#carousel-principal .carousel-item img{
+  width: 100%;
+  object-fit: contain;
+}
+
+
+
+/*==========================================Card News==========================================*/
+
+.left{
+  width: 32%;
+  float: left;
+  margin-right: 1%;
+  color: #9d9d9d!important;
+}
+.center{
+  width: 32%;
+  float: left;
+  margin: 0 1%;
+}
+.right{
+  width: 32%;
+  float: left;
+  margin-left: 1%;
+}
+
+.cards-news h1{
+  text-align: center;
+}
+
+.cards-news .row{
+  justify-content: center;
+}
+
+.margin-bottom{
+  margin-bottom: 25px;
+}
+
+.card-half{
+min-height: 350px;
+  object-fit: cover;
+object-position: left;
+}
+
+.separator{
+  clear: both;
+  margin-top: 30px;
+}
+
+.titleCard{
+  text-align: center;
+}
+
+.buy-button-home{
+    width: 50%;
+    background-color: white;
+    color: black;
+    border: 3px solid black;
+    animation: flash 1s;
+    animation-iteration-count: infinite;
+    font-weight: 800;
+    font-size: larger;
+}
+
+@keyframes flash {
+  from {background-color: #3e3c3ccf;color:snow;}
+  to {background-color:#cec9c6eb;color:#3e3c3ccf;}
+}
+
+
+.banner{
+  min-height: 400px;
+  /*background-color:#ff99006b;*/
+  background:linear-gradient(to top,#cec9c6eb,#3e3c3ccf);
+  padding: 20px 0;
+}
+
+
+
+.card-img-top {
+    max-height: 170px;
+}
+
+.card{
+  /*box-shadow: 0px 3px 9px #0c0c0c;*/
+}
+
+.banner > .row{
+  padding: 0 30px;
+  justify-content: center;
+
+}
+
+
+.zoom{
+  cursor: pointer;
+  transition: 0.3s;
+}
+.zoom:hover{
+  transform: scale(1.02);
+}
+/*==========================================Footer================================================*/
+/*.fab {
+    font-family: "Font Awesome 5 Brands";
+    display: block;
+    margin-bottom: inherit;
+    font-size: large;
+}*/
+
+#background-1 { background-image: url('../img/AdultBlack.jpg');}
+#background-2 { background-image: url('../img/Shopping.jpg'); }
+#background-3 { background-image: url('../img/ModeWallPapers.jpg'); }
+
+.img-change-background{
+  background-size:contain;
+  min-height:650px;
+  background-image: url('../img/Sweat.jpg');
+}
+
+@media only screen and (max-width: 762px){
+  .img-change-background {
+    background-size:cover;
+  }
+}
+
+/*==========================================Network Panel==========================================*/
+
+.lib-panel {
+    margin-bottom: 20Px;
+}
+.lib-panel img {
+    width: 100%;
+    background-color: transparent;
+}
+
+.lib-panel .row,
+.lib-panel .col-md-6 {
+    padding: 0;
+    background-color: #FFFFFF;
+}
+
+
+.lib-panel .lib-row {
+    padding: 0 20px 0 20px;
+}
+
+.lib-panel .lib-row.lib-header {
+    background-color: #FFFFFF;
+    font-size: 20px;
+    padding: 10px 20px 0 20px;
+}
+
+.lib-panel .lib-row.lib-header .lib-header-seperator {
+    height: 2px;
+    width: 26px;
+    background-color: #d9d9d9;
+    margin: 7px 0 7px 0;
+}
+
+.lib-panel .lib-row.lib-desc {
+    position: relative;
+    height: 100%;
+    display: block;
+    font-size: 13px;
+}
+.lib-panel .lib-row.lib-desc a{
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+    left: 20px;
+}
+
+.row-margin-bottom {
+    margin-bottom: 20px;
+}
+
+.box-shadow {
+    /*box-shadow: 0px 3px 9px #0c0c0c;*/
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.lib-img-show{
+  max-height: 250px;
+  object-fit: cover;
+}
+
+
+/*==========================================html element==========================================*/

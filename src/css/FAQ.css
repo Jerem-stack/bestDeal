@@ -1,0 +1,29 @@
+html,body{
+background-image: url('../img/BackGround_Login.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+height: 100%;
+font-family: 'Numans', sans-serif;
+}
+
+.black-background {
+    background-color: gray;
+}
+
+.padding-container{
+  padding-top: 1.25rem;
+  padding-bottom: 6rem;
+}
+
+.card-background{
+  background: linear-gradient(to bottom,#ea5b0c9e,#e30a189e);
+}
+
+.btn-link:hover {
+  color: black;
+    text-decoration: none !important;
+}
+.btn-link {
+    color: black;
+    text-decoration: none !important;
+}

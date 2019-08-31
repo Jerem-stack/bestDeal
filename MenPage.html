@@ -1,0 +1,754 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./src/lib/bootstrap.min.css">
+    <link rel="stylesheet" href="./src/lib/jquery-ui.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.6.1/css/bootstrap-slider.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="./src/css/MenPage.css">
+    <link rel="stylesheet" href="./src/css/NavAndFooter.css">
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script type="text/javascript" src="./src/lib/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="./src/lib/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="./src/lib/popper.min.js"></script>
+    <script type="text/javascript" src="./src/lib/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.6.1/bootstrap-slider.min.js"></script>
+    <script type="text/javascript" src="./src/js/MenPage.js"></script>
+    <script type="text/javascript" src="./src/js/NavAndFooter.js"></script>
+
+
+
+    <title>Men Page</title>
+  </head>
+
+  <body>
+
+    <!-- The overlay -->
+    <div id="myNav" class="overlay">
+      <!-- Button to close the overlay navigation -->
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <!-- Overlay content -->
+      <div class="overlay-content">
+        <a href="#">Accueil</a>
+        <a href="#">Unisexe</a>
+        <a href="#">Accesoire</a>
+        <a href="#">Femme</a>
+        <a href="#">Homme</a>
+        <a href="#">Enfant</a>
+      </div>
+    </div>
+
+
+<!-- Nav bar -->
+<header class="header-eden" style="position:relative;background-color: #ded8d887;">
+  <!--  Les deux premières parties du Header-->
+  <div class="header">
+      <!-- Login / Barre de Recherche / Features -->
+    <div class="header-top">
+      <div class="container-fluid">
+        <div class="header-top-inner">
+          <div class="row">
+            <!-- Partie Log in -->
+            <div class="col-md-2 col-sm-6 d-flex justify-content-left">
+              <ul>
+                <li>
+                    <a class="" href="./LoginForm.html">Login</a>
+                </li>
+                <li>
+                  <a class="" href="./RegisterForm.html">Sign In</a>
+                </li>
+              </ul>
+            </div>
+            <!-- Lorsque l'ecran devient plus petit, cette div réapparait (juste du responsive) -->
+            <div class="col-md-2 col-sm-6 d-flex d-md-none justify-content-end">
+              <ul>
+                <li>
+                  <a class="" href="#" id="navbarMoi" >
+                    <i class="fas fa-user"></i>
+                  </a>
+                </li>
+                <li>
+                  <a class="" href="./ShoppingCartPage.html#"><i class="fas fa-cart-arrow-down"></i> </a>
+                </li>
+              </ul>
+            </div>
+            <!-- Search -->
+            <div class="col-md-8 mt-auto mb-auto">
+              <div class="input-group p-1">
+                <input type="text" class="form-control border-radius-input" placeholder="Search">
+                <div class="input-group-append abs">
+                  <i class="btn btn-outline-secondary fas fa-search search"></i>
+                </div>
+              </div>
+            </div>
+
+            <!-- Cart / Login -->
+            <div class="col-md-2 d-none d-md-block justify-content-center-end">
+              <ul>
+                <li>
+                  <a class="" href="./UserProfil.html" id="navbarMoi" >
+                    <i class="fas fa-user"></i>
+                  </a>
+                </li>
+                <li>
+                  <a class="" href="./ShoppingCartPage.html#"><i class="fas fa-cart-arrow-down"></i> </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- LOGO  -->
+    <div class="header-content">
+      <div class="container">
+        <div class="header-content-inner">
+          <div class="row justify-content-center">
+            <div class="col-3">
+              <a href="./HomePage.html#" style="width:inherit"><img src="./src/img/BestDeal.png" alt="logo" style="width:inherit"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+  </div>
+  <!-- Barre de Navigation -->
+  <div class="header-sticky">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-12 d-none d-md-block">
+          <ul class="mr-auto " style="justify-content: center;display: flex;">
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-hover="dropdown" data-target="./MenPage.html" href="./MenPage.html" id="navbarHommes" aria-haspopup="true" aria-expanded="false">
+                Hommes
+              </a>
+            </li>
+            <li class="dropdown">
+              <a class=" dropdown-toggle" data-target="./MenPage.html" href="./MenPage.html" id="navbarFemmes" data-hover="dropdown" aria-haspopup="true" aria-expanded="false">
+                Femmes
+              </a>
+
+            </li>
+            <li class=" dropdown">
+              <a class=" dropdown-toggle" data-target="./MenPage.html"  href="./MenPage.html" id="navbarOutlet" data-hover="dropdown" aria-haspopup="true" aria-expanded="false">
+                Outlet
+              </a>
+
+            </li>
+            <li class="dropdown">
+              <a class=" dropdown-toggle" data-target="./MenPage.html" href="./MenPage.html" data-hover="dropdown" id="navbarAccessoire" aria-haspopup="true" aria-expanded="false">
+                Accessoire
+              </a>
+
+            </li>
+            <li class="dropdown">
+              <a class=" dropdown-toggle" data-target="./MenPage.html" href="./MenPage.html" id="navbarChaussure" data-hover="dropdown" aria-haspopup="true" aria-expanded="false">
+                Chaussure
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- Apparait quand l'ecran devoent plus petit -->
+        <div class="col-md-12 d-flex d-md-none justify-content-center">
+          <button class="navbar-toggler" onclick="openNav()" type="button" data-toggle="collapse" data-target="#" aria-controls="" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <!-- Div de hover pour les categories de la navabr  -->
+  <div class="test-drop hidden-sm">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3">
+          <h4 class="pt-2" >Categories</h4>
+          <hr>
+          <ul class="list-unstyled">
+            <li><a href="#home">Pantalon</a></li>
+            <li><a href="#news">Chemise</a></li>
+            <li><a href="#contact">Sous-vêtement</a></li>
+            <li><a href="#about">T-shirt</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-3">
+          <h4 class="pt-2">Nouveautés</h4>
+          <hr>
+          <ul class="list-unstyled">
+            <li><a href="#home">Pantalon</a></li>
+            <li><a href="#news">Chemise</a></li>
+            <li><a href="#contact">Sous-vêtement</a></li>
+            <li><a href="#about">T-shirt</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</header>
+
+<!--<div class="separator"></div>
+<h1 class="text-align white black-background">HOMMES</h1>-->
+<!-- Men page -->
+<div class="container-fluid">
+  <!-- Title -->
+  <div class="row">
+    <div class="col-12 item-name">
+
+    </div>
+  </div>
+  <!-- Main Page -->
+  <div class="row">
+    <!-- SideNav Left -->
+
+    <!-- Item Details -->
+    <div class="col-12">
+        <div class="separator"></div>
+          <ul class="nav header-filter d-none d-md-flex">
+
+            <li class="nav-item col-5">
+              <ol class="nav-link breadcrumb-order">
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Homme</a></li>
+                <li><a href="#">Sweat</a></li>
+              </ol>
+            </li>
+
+            <li class="mx-auto col-3">
+              <h5 class="text-align text-uppercase ">
+                 Homme
+             </h5>
+           </li>
+
+            <li class="nav-item col-3 ">
+              <div class="nav-link text-right" href="#" style="color:gray;">42 Articles</div>
+            </li>
+
+
+
+            <li class="nav-item col-1" style="text-align: -webkit-center;">
+              <select class="nav-link select-order " href="#">Trier Par
+                <option value="">Tout</option>
+                <option value="">Date</option>
+                <option value="">Prix</option>
+              </select>
+            </li>
+
+          </ul>
+          <!-- Product Detail -->
+          <div class="row row-product">
+            <div class="col-lg-3 col-md-4 col-sm-6 bottom-separator">
+                <div class="product-grid3">
+                    <div class="product-image3">
+                        <a href="./ItemDetail.html">
+                          <img class="pic-1" src="http://bestjquery.com/tutorial/product-grid/demo9/images/img-1.jpg">
+                          <img class="pic-2" src="http://bestjquery.com/tutorial/product-grid/demo9/images/img-2.jpg">
+                        </a>
+                        <ul class="social">
+                            <li><a href="#"><i class="fa fa-shopping-bag"></i></a></li>
+                            <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                        </ul>
+                        <span class="product-new-label">New</span>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="title"><a href="#">Men's Blazer</a></h3>
+                        <div class="price">
+                            $63.50
+                            <span>$75.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 bottom-separator">
+                <div class="product-grid3">
+                    <div class="product-image3">
+                        <a href="./ItemDetail.html">
+                          <img class="pic-1" src="http://bestjquery.com/tutorial/product-grid/demo9/images/img-3.jpg">
+                          <img class="pic-2" src="http://bestjquery.com/tutorial/product-grid/demo9/images/img-4.jpg">
+                        </a>
+                        <ul class="social">
+                            <li><a href="#"><i class="fa fa-shopping-bag"></i></a></li>
+                            <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                        </ul>
+                        <span class="product-new-label">New</span>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="title"><a href="#">Men's Blazer</a></h3>
+                        <div class="price">
+                            $63.50
+                            <span>$75.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 bottom-separator">
+                <div class="product-grid3">
+                    <div class="product-image3">
+                        <a href="./ItemDetail.html">
+                          <img class="pic-1" src="http://bestjquery.com/tutorial/product-grid/demo9/images/img-7.jpg">
+                          <img class="pic-2" src="http://bestjquery.com/tutorial/product-grid/demo9/images/img-8.jpg">
+                        </a>
+                        <ul class="social">
+                            <li><a href="#"><i class="fa fa-shopping-bag"></i></a></li>
+                            <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                        </ul>
+                        <span class="product-new-label">New</span>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="title"><a href="#">Men's Blazer</a></h3>
+                        <div class="price">
+                            $63.50
+                            <span>$75.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 bottom-separator">
+                <div class="product-grid3">
+                    <div class="product-image3">
+                        <a href="./ItemDetail.html">
+                          <img class="pic-1" src="http://bestjquery.com/tutorial/product-grid/demo3/images/img-1.jpeg">
+                          <img class="pic-2" src="http://bestjquery.com/tutorial/product-grid/demo3/images/img-2.jpeg">
+                        </a>
+                        <ul class="social">
+                            <li><a href="#"><i class="fa fa-shopping-bag"></i></a></li>
+                            <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                        </ul>
+                        <span class="product-new-label">New</span>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="title"><a href="#">Men's Blazer</a></h3>
+                        <div class="price">
+                            $63.50
+                            <span>$75.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 bottom-separator">
+                <div class="product-grid3">
+                    <div class="product-image3">
+                        <a href="./ItemDetail.html">
+                          <img class="pic-1" src="http://bestjquery.com/tutorial/product-grid/demo3/images/img-5.jpeg">
+                          <img class="pic-2" src="http://bestjquery.com/tutorial/product-grid/demo3/images/img-6.jpeg">
+                        </a>
+                        <ul class="social">
+                            <li><a href="#"><i class="fa fa-shopping-bag"></i></a></li>
+                            <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                        </ul>
+                        <span class="product-new-label">New</span>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="title"><a href="#">Men's Blazer</a></h3>
+                        <div class="price">
+                            $63.50
+                            <span>$75.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 bottom-separator">
+                <div class="product-grid3">
+                    <div class="product-image3">
+                        <a href="./ItemDetail.html">
+                            <img class="pic-1" src="http://bestjquery.com/tutorial/product-grid/demo4/images/img-1.jpg">
+                            <img class="pic-2" src="http://bestjquery.com/tutorial/product-grid/demo4/images/img-2.jpg">
+                        </a>
+                        <ul class="social">
+                            <li><a href="#"><i class="fa fa-shopping-bag"></i></a></li>
+                            <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                        </ul>
+                        <span class="product-new-label">New</span>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="title"><a href="#">Men's Blazer</a></h3>
+                        <div class="price">
+                            $63.50
+                            <span>$75.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 bottom-separator">
+                <div class="product-grid3">
+                    <div class="product-image3">
+                        <a href="./ItemDetail.html">
+                          <img class="pic-1" src="http://bestjquery.com/tutorial/product-grid/demo5/images/img-3.jpg">
+                          <img class="pic-2" src="http://bestjquery.com/tutorial/product-grid/demo5/images/img-4.jpg">
+                        </a>
+                        <ul class="social">
+                            <li><a href="#"><i class="fa fa-shopping-bag"></i></a></li>
+                            <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                        </ul>
+                        <span class="product-new-label">New</span>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="title"><a href="#">Men's Blazer</a></h3>
+                        <div class="price">
+                            $63.50
+                            <span>$75.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 bottom-separator">
+                <div class="product-grid3">
+                    <div class="product-image3">
+                        <a href="./ItemDetail.html">
+                            <img class="pic-1" src="http://bestjquery.com/tutorial/product-grid/demo4/images/img-1.jpg">
+                            <img class="pic-2" src="http://bestjquery.com/tutorial/product-grid/demo4/images/img-2.jpg">
+                        </a>
+                        <ul class="social">
+                            <li><a href="#"><i class="fa fa-shopping-bag"></i></a></li>
+                            <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                        </ul>
+                        <span class="product-new-label">New</span>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="title"><a href="#">Men's Blazer</a></h3>
+                        <div class="price">
+                            $63.50
+                            <span>$75.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 bottom-separator">
+                <div class="product-grid3">
+                    <div class="product-image3">
+                        <a href="./ItemDetail.html">
+                          <img class="pic-1" src="http://bestjquery.com/tutorial/product-grid/demo5/images/img-5.jpg">
+                          <img class="pic-2" src="http://bestjquery.com/tutorial/product-grid/demo5/images/img-6.jpg">
+                        </a>
+                        <ul class="social">
+                            <li><a href="#"><i class="fa fa-shopping-bag"></i></a></li>
+                            <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                        </ul>
+                        <span class="product-new-label">New</span>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="title"><a href="#">Men's Blazer</a></h3>
+                        <div class="price">
+                            $63.50
+                            <span>$75.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 bottom-separator">
+                <div class="product-grid3">
+                    <div class="product-image3">
+                        <a href="./ItemDetail.html">
+                          <img class="pic-1" src="http://bestjquery.com/tutorial/product-grid/demo5/images/img-7.jpg">
+                          <img class="pic-2" src="http://bestjquery.com/tutorial/product-grid/demo5/images/img-8.jpg">
+                        </a>
+                        <ul class="social">
+                            <li><a href="#"><i class="fa fa-shopping-bag"></i></a></li>
+                            <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                        </ul>
+                        <span class="product-new-label">New</span>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="title"><a href="#">Men's Blazer</a></h3>
+                        <div class="price">
+                            $63.50
+                            <span>$75.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 bottom-separator">
+                <div class="product-grid3">
+                    <div class="product-image3">
+                        <a href="./ItemDetail.html">
+                            <img class="pic-1" src="http://bestjquery.com/tutorial/product-grid/demo4/images/img-1.jpg">
+                            <img class="pic-2" src="http://bestjquery.com/tutorial/product-grid/demo4/images/img-2.jpg">
+                        </a>
+                        <ul class="social">
+                            <li><a href="#"><i class="fa fa-shopping-bag"></i></a></li>
+                            <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                        </ul>
+                        <span class="product-new-label">New</span>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="title"><a href="#">Men's Blazer</a></h3>
+                        <div class="price">
+                            $63.50
+                            <span>$75.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 bottom-separator">
+                <div class="product-grid3">
+                    <div class="product-image3">
+                        <a href="./ItemDetail.html">
+                            <img class="pic-1" src="http://bestjquery.com/tutorial/product-grid/demo4/images/img-1.jpg">
+                            <img class="pic-2" src="http://bestjquery.com/tutorial/product-grid/demo4/images/img-2.jpg">
+                        </a>
+                        <ul class="social">
+                            <li><a href="#"><i class="fa fa-shopping-bag"></i></a></li>
+                            <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                        </ul>
+                        <span class="product-new-label">New</span>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="title"><a href="#">Men's Blazer</a></h3>
+                        <div class="price">
+                            $63.50
+                            <span>$75.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 bottom-separator">
+                <div class="product-grid3">
+                    <div class="product-image3">
+                        <a href="./ItemDetail.html">
+                          <img class="pic-1" src="http://bestjquery.com/tutorial/product-grid/demo11/images/img-3.jpg">
+                          <img class="pic-2" src="http://bestjquery.com/tutorial/product-grid/demo11/images/img-4.jpg">
+                        </a>
+                        <ul class="social">
+                            <li><a href="#"><i class="fa fa-shopping-bag"></i></a></li>
+                            <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                        </ul>
+                        <span class="product-new-label">New</span>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="title"><a href="#">Men's Blazer</a></h3>
+                        <div class="price">
+                            $63.50
+                            <span>$75.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 bottom-separator">
+                <div class="product-grid3">
+                    <div class="product-image3">
+                        <a href="./ItemDetail.html">
+                            <img class="pic-1" src="http://bestjquery.com/tutorial/product-grid/demo4/images/img-1.jpg">
+                            <img class="pic-2" src="http://bestjquery.com/tutorial/product-grid/demo4/images/img-2.jpg">
+                        </a>
+                        <ul class="social">
+                            <li><a href="#"><i class="fa fa-shopping-bag"></i></a></li>
+                            <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                        </ul>
+                        <span class="product-new-label">New</span>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="title"><a href="#">Men's Blazer</a></h3>
+                        <div class="price">
+                            $63.50
+                            <span>$75.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 bottom-separator">
+                <div class="product-grid3">
+                    <div class="product-image3">
+                        <a href="./ItemDetail.html">
+                            <img class="pic-1" src="http://bestjquery.com/tutorial/product-grid/demo4/images/img-1.jpg">
+                            <img class="pic-2" src="http://bestjquery.com/tutorial/product-grid/demo4/images/img-2.jpg">
+                        </a>
+                        <ul class="social">
+                            <li><a href="#"><i class="fa fa-shopping-bag"></i></a></li>
+                            <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                        </ul>
+                        <span class="product-new-label">New</span>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="title"><a href="#">Men's Blazer</a></h3>
+                        <div class="price">
+                            $63.50
+                            <span>$75.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 bottom-separator">
+                <div class="product-grid3">
+                    <div class="product-image3">
+                        <a href="./ItemDetail.html">
+                          <img class="pic-1" src="http://bestjquery.com/tutorial/product-grid/demo4/images/img-1.jpg">
+                          <img class="pic-2" src="http://bestjquery.com/tutorial/product-grid/demo4/images/img-2.jpg">
+                        </a>
+                        <ul class="social">
+                            <li><a href="#"><i class="fa fa-shopping-bag"></i></a></li>
+                            <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="title"><a href="#">Women's Designer Top</a></h3>
+                        <div class="price">
+                            $43.50
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 bottom-separator">
+                <div class="product-grid3">
+                    <div class="product-image3">
+                        <a href="./ItemDetail.html">
+                          <img class="pic-1" src="http://bestjquery.com/tutorial/product-grid/demo6/images/img-1.jpg">
+                          <img class="pic-2" src="http://bestjquery.com/tutorial/product-grid/demo6/images/img-2.jpg">
+                        </a>
+                        <ul class="social">
+                            <li><a href="#"><i class="fa fa-shopping-bag"></i></a></li>
+                            <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                        </ul>
+                        <span class="product-new-label">New</span>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="title"><a href="#">Men's Blazer</a></h3>
+                        <div class="price">
+                            $63.50
+                            <span>$75.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 bottom-separator">
+                <div class="product-grid3">
+                    <div class="product-image3">
+                        <a href="./ItemDetail.html">
+                          <img class="pic-1" src="http://bestjquery.com/tutorial/product-grid/demo6/images/img-3.jpg">
+                          <img class="pic-2" src="http://bestjquery.com/tutorial/product-grid/demo6/images/img-4.jpg">
+                        </a>
+                        <ul class="social">
+                            <li><a href="#"><i class="fa fa-shopping-bag"></i></a></li>
+                            <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                        </ul>
+                        <span class="product-new-label">New</span>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="title"><a href="#">Men's Blazer</a></h3>
+                        <div class="price">
+                            $63.50
+                            <span>$75.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+          <!-- Product Detail -->
+    </div>
+
+  </div>
+</div>
+
+
+
+
+<!-- Footer -->
+<footer class="page-footer font-small mdb-color lighten-3 pt-4" style="background-color: #e1e4e4;">
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left">
+      <!-- Grid row -->
+      <div class="row">
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1">
+          <!-- Content -->
+          <h5 class="text-uppercase mb-4">Footer Content</h5>
+          <p>Here you can use rows and columns here to organize your footer content.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit amet numquam iure provident voluptate esse
+            quasi, veritatis totam voluptas nostrum.</p>
+        </div>
+        <!-- Grid column -->
+        <hr class="clearfix w-100 d-md-none">
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1">
+          <!-- Links -->
+          <h5 class=" text-uppercase mb-4">About</h5>
+          <ul class="list-unstyled">
+            <li>
+              <p>
+                <a href="./FAQ.html">FAQ</a>
+              </p>
+            </li>
+            <li>
+              <p>
+                <a href="./ContactForm.html">CONTACT US</a>
+              </p>
+            </li>
+            <li>
+              <p>
+                <a href="#!">ABOUT US</a>
+              </p>
+            </li>
+            <li>
+              <p>
+                <a href="#!">AWARDS</a>
+              </p>
+            </li>
+          </ul>
+        </div>
+        <!-- Grid column -->
+        <hr class="clearfix w-100 d-md-none">
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
+          <!-- Contact details -->
+          <h5 class="text-uppercase mb-4">Address</h5>
+          <ul class="list-unstyled">
+            <li>
+              <p>
+                <i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
+            </li>
+            <li>
+              <p>
+                <i class="fas fa-envelope mr-3"></i> info@example.com</p>
+            </li>
+            <li>
+              <p>
+                <i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+            </li>
+            <li>
+              <p>
+                <i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+            </li>
+          </ul>
+        </div>
+        <!-- Grid column -->
+        <hr class="clearfix w-100 d-md-none">
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 text-center mx-auto my-4">
+          <!-- Social buttons -->
+          <h5 class=" text-uppercase mb-4">Follow Us</h5>
+          <!-- Facebook -->
+            <i class="fab fa-facebook-f" style="color:#4267b2"></i>
+          <!-- Twitter -->
+            <i class="fab fa-twitter" style="color:#38A1F3"></i>
+          <!-- Google +-->
+            <i class="fab fa-google-plus-g" style="color:#2fab1b"></i>
+          <!-- Instagram -->
+            <i class="fab fa-instagram" style="color:#ca3183"></i>
+
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+    <!-- Footer Links -->
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3" style="background: linear-gradient(to bottom,#ea5b0c52,#e30a1852);">© 2018 Copyright:
+      <a href="#"> Best Deal</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+
+
+
+
+  </body>
+
+</html>
